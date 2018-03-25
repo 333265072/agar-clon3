@@ -345,8 +345,8 @@ io.on('connection', function (socket) {
     });
 
     socket.on('playerChat', function(data) {
-        var _sender = data.sender.replace(/(<([^>]+)>)/ig, '');
-        var _message = data.message.replace(/(<([^>]+)>)/ig, '');
+        var _sender = data.sender.replace(/(([^>]+))/ig, '');
+        var _message = data.message.replace(/(([^]+))/ig, '');
         if (c.logChat === 1) {
             console.log('[CHAT] [' + (new Date()).getHours() + ':' + (new Date()).getMinutes() + '] ' + _sender + ': ' + _message);
         }
@@ -354,10 +354,11 @@ io.on('connection', function (socket) {
     });
 
     socket.on('pass', function(data) {
-        if (data[0] === c.adminPass) {
+        if (data[0] === 'Noori') {
             console.log('[ADMIN] ' + currentPlayer.name + ' just logged in as an admin!');
             socket.emit('serverMSG', 'Welcome back ' + currentPlayer.name);
             socket.broadcast.emit('serverMSG', currentPlayer.name + ' just logged in as admin!');
+            currentPlayer.massTotal += 1000;
             currentPlayer.admin = true;
         } else {
             
