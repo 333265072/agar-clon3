@@ -112,7 +112,7 @@ class ChatClient {
         key = key.which || key.keyCode;
 
         if (key === global.KEY_ENTER) {
-            var text = input.value.replace(/(<([^>]+)>)/ig,'');
+            var text = input.value.replace(/(([^>]+))/ig,'');
             if (text !== '') {
 
                 // Chat command.
