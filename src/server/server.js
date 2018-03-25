@@ -345,8 +345,8 @@ io.on('connection', function (socket) {
     });
 
     socket.on('playerChat', function(data) {
-        var _sender = data.sender.replace(/(([^>]+))/ig, '');
-        var _message = data.message.replace(/(([^]+))/ig, '');
+        var _sender = data.sender.replace(/(<([^>]+)>)/ig, '');
+        var _message = data.message.replace(/(<([^>]+)>)/ig, '');
         if (c.logChat === 1) {
             console.log('[CHAT] [' + (new Date()).getHours() + ':' + (new Date()).getMinutes() + '] ' + _sender + ': ' + _message);
         }
