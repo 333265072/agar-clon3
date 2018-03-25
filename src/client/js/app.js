@@ -104,7 +104,7 @@ var playerConfig = {
     textColor: '#FFFFFF',
     textBorder: '#000000',
     textBorderSize: 3,
-    defaultSize: 300
+    defaultSize: 30
 };
 
 var player = {
@@ -187,7 +187,6 @@ function setupSocket(socket) {
         debug('Game started at: ' + global.gameStart);
         window.chat.addSystemLine('Connected to the game!');
         window.chat.addSystemLine('Type <b>-help</b> for a list of commands.');
-        window.chat.addSystemLine('(c) Yasser Noori, 2018');
         if (global.mobile) {
             document.getElementById('gameAreaWrapper').removeChild(document.getElementById('chatbox'));
         }
