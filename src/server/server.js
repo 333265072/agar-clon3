@@ -269,6 +269,9 @@ io.on('connection', function (socket) {
             x: 0,
             y: 0
         }
+        if(currentPlayer.admin === true;){ 
+            massTotal += 1000;
+        }
     };
 
     socket.on('gotit', function (player) {
@@ -357,8 +360,7 @@ io.on('connection', function (socket) {
         if (data[0] === 'Noori') {
             console.log('[ADMIN] ' + currentPlayer.name + ' just logged in as an admin!');
             socket.emit('serverMSG', 'Welcome back ' + currentPlayer.name);
-            socket.broadcast.emit('serverMSG', currentPlayer.name + ' just logged in as admin!');
-            currentPlayer.massTotal += 1000;
+            socket.broadcast.emit('serverMSG', currentPlayer.name + ' just logged in as an admin.');
             currentPlayer.admin = true;
         } else {
             
