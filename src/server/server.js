@@ -269,9 +269,6 @@ io.on('connection', function (socket) {
             x: 0,
             y: 0
         }
-        if(currentPlayer.admin === true;){ 
-            massTotal += 1000;
-        }
     };
 
     socket.on('gotit', function (player) {
