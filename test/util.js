@@ -44,7 +44,7 @@ describe('#validNick', function () {
           n2 = util.validNick('Jesse_Pinkman'),
           n3 = util.validNick('hank'),
           n4 = util.validNick('marie_schrader12'),
-          n5 = util.validNick('<>');
+          n5 = util.validNick('ABC');
 
       expect(n1).to.be.true;
       expect(n2).to.be.true;
