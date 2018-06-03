@@ -22,7 +22,7 @@
     "gameMass": 200000,
     "maxFood": 5000,
     "maxVirus": 1,
-    "slowBase": 4.5,
+    "slowBase": 114.5,
     "logChat": 0,
     "networkUpdateFactor": 40,
     "maxHeartbeatInterval": 100000,
