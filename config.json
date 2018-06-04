@@ -11,8 +11,8 @@
   	"stroke": "#0090ff",
 		"strokeWidth": 20,
 		"defaultMass": {
-            "from": 50000,
-            "to": 50000
+            "from": 120,
+            "to": 150
         },
 		"splitMass": 1000
 	},
