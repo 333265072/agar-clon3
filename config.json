@@ -2,9 +2,9 @@
     "host": "0.0.0.0",
     "port": 3000,
     "logpath": "logger.php",
-    "foodMass": 10,
-    "fireFood": 500,
-    "limitSplit": 1000,
+    "foodMass": 30,
+    "fireFood": 100,
+    "limitSplit": 30,
     "defaultPlayerMass": 10,
 	"virus": {
     "fill": "#47d4ff",
