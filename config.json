@@ -2,25 +2,25 @@
     "host": "0.0.0.0",
     "port": 3000,
     "logpath": "logger.php",
-    "foodMass": 3,
+    "foodMass": 2,
     "fireFood": 50,
     "limitSplit": 30,
     "defaultPlayerMass": 10,
 	"virus": {
-    "fill": "#47d4ff",
+        "fill": "#47d4ff",
   	"stroke": "#0090ff",
-		"strokeWidth": 20,
-		"defaultMass": {
-            "from": 120,
-            "to": 150
+	"strokeWidth": 20,
+	"defaultMass": {
+        "from": 120,
+        "to": 150
         },
-		"splitMass": 1000
+	"splitMass": 1000
 	},
     "gameWidth": 9000,
     "gameHeight": 9000,
     "adminPass": "DEFAULT",
     "gameMass": 200000,
-    "maxFood": 5000,
+    "maxFood": 9000,
     "maxVirus": 1,
     "slowBase": 1224.5,
     "logChat": 0,
